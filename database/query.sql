@@ -1,0 +1,1 @@
+SELECT * FROM clientes WHERE edad > 30;
