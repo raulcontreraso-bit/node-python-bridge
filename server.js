@@ -138,7 +138,6 @@ const server = http.createServer((req, res) => {
     res.end('Route Not Found');
 });
 
-
 server.listen(PORT, () => {
     console.log(`🚀 Servidor unificado refactorizado en http://localhost:${PORT}`);
 });
