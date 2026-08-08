@@ -131,7 +131,7 @@ const server = http.createServer((req, res) => {
             });
         });
         return;
-    }
+}
 
     // Default Fallback
     res.writeHead(404, { 'Content-Type': 'text/plain' });
