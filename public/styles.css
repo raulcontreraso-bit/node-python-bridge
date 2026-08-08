@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #1e293b;
+    color: white;
+    padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.container {
+    padding: 30px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #0f172a;
+}
+
+.grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 25px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-inline {
+    display: flex;
+    gap: 10px;
+}
+
+.form-inline input {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-primary {
+    background: #0f172a;
+}
+
+.btn-secondary {
+    background: #334155;
+    white-space: nowrap;
+}
+
+pre {
+    background: #1e293b;
+    color: #f8fafc;
+    padding: 12px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 12px;
+    margin: 0;
+}
+
+.highlight-red { color: #e11d48; }
+.highlight-green { color: #16a34a; }
+.highlight-blue { color: #2563eb; }
+
+/* Dynamic Result Box Styles */
+.result-box {
+    background: #e8f4f8;
+    padding: 15px;
+    border-left: 5px solid #2980b9;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.result-box h4 {
+    margin: 0 0 5px 0;
+    color: #27ae60;
+}
+
+.java-terminal {
+    background: #1e293b;
+    color: #f1c40f;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 11px;
+    border-radius: 4px;
+    line-height: 1.2;
+    white-space: pre-wrap;
+}
+
+.error-text {
+    color: #e74c3c;
+    margin-top: 15px;
+    font-weight: bold;
+}

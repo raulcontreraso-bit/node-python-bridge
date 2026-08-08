@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orquestador Políglota Unificado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h2>🏛️ Orquestador de Infraestructura Políglota</h2>
+        <span class="subtitle">Node.js • Python • Fortran • Cobol • C++ • Java</span>
+    </header>
+
+    <main class="container">
+        <!-- Fortran Analytics Module -->
+        <section class="card">
+            <h3>🧪 Módulo Estadístico Analítico (Fortran 90)</h3>
+            <p>
+                Edad Promedio: <b id="stat-edad" class="highlight-red">Cargando...</b> | 
+                Peso Máximo: <b id="stat-peso" class="highlight-green">Cargando...</b> | 
+                Colesterol Mínimo: <b id="stat-col" class="highlight-blue">Cargando...</b>
+            </p>
+        </section>
+
+        <div class="grid-2col">
+            <!-- Client Registration Form -->
+            <section class="card">
+                <h3>📝 Registro de Datos Clínicos y Pólizas</h3>
+                <form id="form-crear-cliente">
+                    <input type="text" id="cli-id" name="id" placeholder="ID del Cliente (ej: CLI001)" required>
+                    <input type="text" id="cli-nombre" name="nombre" placeholder="Nombre Completo" required>
+                    <input type="text" id="cli-direccion" name="direccion" placeholder="Dirección Residencial" required>
+                    <input type="text" id="cli-telefono" name="telefono" placeholder="Teléfono" required>
+                    <input type="number" id="cli-edad" name="edad" placeholder="Edad" required>
+                    <input type="number" step="0.1" id="cli-peso" name="peso" placeholder="Peso" required>
+                    <input type="number" id="cli-colesterol" name="colesterol" placeholder="Colesterol" required>
+                    <input type="text" id="cli-num-seguro" name="num_seguro" placeholder="Nº Seguro" required>
+                    <input type="number" step="0.1" id="cli-cuota" name="cuota" placeholder="Cuota" required>
+                    <button type="submit" class="btn btn-primary">Guardar Registro</button>
+                </form>
+            </section>
+
+            <div class="right-column">
+                <!-- Python Database View -->
+                <section class="card">
+                    <h3>👥 Base de Datos Maestra (SQL)</h3>
+                    <pre id="python-db-output">Cargando registros...</pre>
+                </section>
+
+                <!-- Process Chain Form & Results -->
+                <section class="card">
+                    <h3>🔍 Inspección de Clientes (C++ / COBOL / Java)</h3>
+                    <form id="form-procesar-individual" class="form-inline">
+                        <input type="text" id="id-buscar" name="id_buscar" placeholder="Introducir ID de Cliente existente..." required>
+                        <button type="submit" class="btn btn-secondary">Lanzar Cadena de Procesos</button>
+                    </form>
+                    <div id="resultado-cadena"></div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
